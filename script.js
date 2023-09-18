@@ -26,7 +26,9 @@ document.addEventListener("DOMContentLoaded", function () {
           resultElement.textContent = data.calculation;
           console.log(data.calculation);
         } else {
-          alert("Tidak dapat menghitung akar kuadrat. Pastikan angka positif.");
+          alert(
+            "Tidak dapat menghitung akar kuadrat. Pastikan angka lebih dari nol atau tidak melebihi kapasitas."
+          );
         }
       })
       .catch((error) => {
