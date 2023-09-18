@@ -4,8 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const resultElement = document.querySelector(".container h1");
 
   calculateButton.addEventListener("click", function (event) {
-    event.preventDefault(); // Menghentikan pembaharuan halaman default
-
+    event.preventDefault();
     const inputValue = parseFloat(calculateInput.value);
 
     if (isNaN(inputValue)) {
