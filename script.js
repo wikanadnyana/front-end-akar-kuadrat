@@ -22,7 +22,7 @@ document.addEventListener("DOMContentLoaded", function () {
     })
       .then((response) => response.json())
       .then((data) => {
-        if (data.calculation) {
+        if (data.calculation || data.calculation == 0) {
           resultElement.textContent = data.calculation;
           console.log(data.calculation);
         } else {
