@@ -12,7 +12,7 @@ document.addEventListener("DOMContentLoaded", function () {
       return;
     }
 
-    fetch("http://localhost:8080/api/calculate", {
+    fetch("https://api-akar-kuadrat-production.up.railway.app/api/calculate", {
       method: "POST",
       headers: {
         Accept: "application/json",
