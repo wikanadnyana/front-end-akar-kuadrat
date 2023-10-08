@@ -21,7 +21,7 @@ body {
   box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
   padding: 40px;
   width: 450px;
-  height: 320px;
+  max-width: 90%; /* Adjust the maximum width for responsiveness */
   display: flex;
   flex-direction: column;
 }
@@ -29,6 +29,7 @@ body {
 form {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap; /* Ensure that input and button wrap on smaller screens */
 }
 
 h1 {
@@ -36,8 +37,7 @@ h1 {
 }
 
 #calculate-input {
-  width: 60%;
-  max-width: 280px;
+  width: 100%; /* Make the input take up the full width on small screens */
   padding: 8px 20px;
   border: none;
   box-shadow: 0 0 4px rgba(0, 0, 0, 0.2);
@@ -60,6 +60,7 @@ h3 {
   cursor: pointer;
   border-radius: 5px;
   margin-left: 10px;
+  margin-top: 10px;
 }
 
 #calculate-button:hover {
@@ -72,4 +73,24 @@ h3 {
   cursor: pointer;
   border-radius: 5px;
   margin-left: 10px;
+}
+
+/* Media queries for responsiveness */
+@media screen and (max-width: 600px) {
+  .container {
+    width: 75%;
+    padding: 20px;
+    border-radius: 30px;
+  }
+
+  #calculate-input {
+    width: 100%;
+  }
+
+  #calculate-button {
+    margin-left: 0; /* Center the button on smaller screens */
+  }
+  h1 {
+    text-align: center;
+  }
 }
